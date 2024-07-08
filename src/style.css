@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    background-image: url(img/background.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+
+/* Style the frog container */
+#frog-container {
+
+  position: relative;
+  width: 800px;
+  height: 600px;
+  /* border: 1px solid black; */
+  /* margin-bottom: 20%; */
+}
+
+/* Style the frog element */
+#frog {
+  position: absolute;
+  top: 370px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  
+}
+.frog-move{
+animation: frog 10s infinite ;
+}
+@keyframes frog {
+  0% {
+    transform:translateX(0);
+  }
+  100% {
+    transform: translateX(800%);
+  }
+  
+}
+.frog-reversed{
+  animation: frog-reversed 10s infinite;
+}
+@keyframes frog-reversed {
+  0% {
+    transform:translateX(800%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+  
+}
+
+.frog-stop{
+  animation: frog-stop 10s;
+}
+@keyframes frog-stop {
+  0% {
+    transform:translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+  
+}
+
+
+
+/* Style the buttons */
+button {
+  position: absolute;
+  margin-top: 20%;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  background-color: rgb(182, 122, 12);
+  color: white;
+  border: none;
+  border-radius: 40%;
+
+  
+}
+
+/* Position the buttons on the x-axis */
+.button-1 {top: 470px; left: -10%; }
+.button-2 { top: 470px;left: 35px;  }
+.button-3 { top: 470px;left: 150px; }
+.button-4 { top: 470px; left: 270px; }
+.button-5 { top: 470px; left: 390px; }
+.button-6 { top: 470px; left: 510px; }
+.button-7 { top: 470px;left: 625px; }
+.button-8 {top: 470px; left: 735px; }
+.button-9 { top: 470px; left: 850px; }
+.button-10 { top: 470px; left: 970px; }
